@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDowm</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+        /*div{
+            background-color: plum;
+            &:hover h1{
+                display: block;
+                color: turquoise;
+
+            }
+        } */
+        /* Hover will work itself also will work for child also */
+        /* div:hover h1{
+            display: block;
+            background-color: saddlebrown;
+            cursor: pointer;
+        } */
+         /* p{
+            display: none;
+         }
+         div{
+           background-color: palevioletred;
+         }
+         h1:hover p{
+            display: block;
+         }
+         div:hover p{
+            display: block;
+         }
+         */
+         nav{
+            background-color: hotpink;
+           
+         }
+         ul{
+             display: flex;
+             list-style: none;
+             }
+             a{
+                text-decoration: none;
+                padding: 1rem;
+                display: block;
+                color: white;
+                &:hover{
+                    background-color: purple;
+                    color: aqua;
+                }
+             }
+             #menu{
+                background-color: tomato;
+                list-style: none;
+                position:absolute ;
+                top: 200px;
+                
+             }
+             
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <h1>I am Header</h1>
+        <p>I am paragraph</p>
+    </div>
+    <h1>I am Header2 </h1s> -->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Layout</a></li>
+                <li id="drop"><a href="">Service</a>
+                <ul id="menu">
+                    <li><a href="">Chennai</a></li>
+                    <li><a href="">Mumbai</a></li>
+                    <li><a href="">Karnataka</a></li>
+                    <li><a href="">Delhi</a></li>
+                </ul>
+            </li>
+            </ul>
+        </nav>
+</body>
+</html>

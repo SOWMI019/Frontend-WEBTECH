@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonsive</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+            box-sizing: border-box;
+        
+        }
+        nav{
+            height: 100px;
+            background-color: #391539;
+            color: wheat;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+
+        }
+        nav > ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        li{
+            letter-spacing: 1.4px;
+            cursor: pointer;
+        }
+
+        @media (max-width:768px) {
+            nav{
+                background-color: palevioletred;
+            }
+           
+        }
+        @media (max-width:480px) {
+            nav{
+                background-color: powderblue;
+            }
+            ul{
+                visibility: hidden;
+            }
+            main{
+                flex-direction: column;
+            }
+        }
+            
+       
+        main{
+            display: flex;
+            height: 100vh;
+            background-color: #251101;
+            padding: 0 10%;
+        }
+        main >.left{
+            flex-basis: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        main >.right{
+            display: flex;
+            flex-basis: 40%;
+            justify-content: center;
+            align-items: center;
+        }
+       .right > img{
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+        }
+   
+        
+    
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Our App </h1>
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        
+    </nav>
+    <main>
+        <div class="left">
+            <h1>about our Webpage</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium vitae similique sequi veniam fuga voluptate rem laboriosam perferendis aperiam deserunt qui eveniet impedit iste laudantium aspernatur, porro voluptas vel! Nostrum quia quam cupiditate. Similique, vero accusamus? Aperiam officia inventore, optio, reiciendis eaque soluta, dolores labore vero dolore quod cum?</p>
+            <button>Get More Info</button>
+
+        </div>
+        <div class="right">
+            <img src="https://i.pinimg.com/736x/34/4e/9a/344e9a228ca73e2872ce3d5b507ed369.jpg" alt="">
+
+        </div>
+    </main>
+    
+</body>
+</html>

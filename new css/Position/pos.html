@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 200px;
+            background-color: yellowgreen;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         header > h1{
+            text-transform: capitalize;
+            font-size: 60px;
+            letter-spacing: 2px;
+         }
+         .outer{
+            height: 100vh;
+            background-color: plum;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+         }
+         .outer > .middle{
+            height: 85%;
+            width: 85%;
+            background-color: hotpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .middle > .inner{
+            height: 85%;
+            width: 85%;
+            background-color:olivedrab ;
+            position: relative;
+
+         }
+         .inner > .box{
+            height:70px;
+            width:70px ;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         #box1{
+             background-color: peru; 
+            /* position: relative; it related to its original position */
+            /* right: 40px; */
+            /*  Absoulte-//coming outside of the document flow */
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            
+            transform: translate(-50%,-50%);
+         }
+         #box2{
+            background-color: powderblue;
+            position: absolute;
+         }
+         #box3{
+            background-color: violet;
+            position: absolute;
+            bottom: 0;
+         }
+         #box4{
+            background-color: saddlebrown;
+             position: absolute;
+             right: 0;
+             bottom: 0;
+         }
+         #box5{
+            background-color: slateblue;
+             position: absolute;
+             right: 0;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Position Relative and Absolute</h1>
+    </header>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <div class="box" id="box1">box-1</div>
+                <div class="box" id="box2">box-2</div>
+                <div class="box" id="box3">box-3</div>
+                <div class="box" id="box4">box-4</div>
+                <div class="box" id="box5">box-5</div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

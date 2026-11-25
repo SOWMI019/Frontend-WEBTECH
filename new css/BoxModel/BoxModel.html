@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxModel</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           
+        }
+        main{
+            height: 250px;
+            width: 400px;
+            background-color: purple;
+            color: white;
+            /* padding-top: 10px;
+           padding-left: 20px;
+           padding-right: 30px;
+           padding-bottom: 40px; */
+           padding: 10px 20px 30px 40px ;
+           margin-top: 30px;
+        }
+        section{
+            height: 200px;
+            width: 300px;
+            background-color: orchid;
+            padding: 15px 20px;
+            margin: 20px;
+            /* border: 4px dashed black; */
+            border-top: 5px solid yellow;
+            border-right: 5px dashed blue;
+            border-bottom: 5px dotted purple;
+            border-left: 5px double green;
+            border-radius: 10px;
+         
+        }
+        button{
+            padding: 5px 100px;
+        }
+        main > h2{
+            margin: 10px;
+        }
+       .circle{
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        margin: 20px auto;
+       border-radius: 50%;
+       }
+       .box1{
+        height: 200px;
+        width: 200px;
+        background-color: khaki;
+        margin: 30px auto;
+        padding: 20px;
+        
+       }
+       .box2{
+        height: 200px;
+        width: 200px;
+        background-color: sienna;
+        margin: 30px auto;
+       }
+     
+       
+
+        
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+
+    <button>Click</button>
+
+    <b>Hello</b>
+    <main>
+        <h2>This is my Tag</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi totam assumenda nisi numquam corporis provident hic aspernatur rerum modi excepturi porro accusantium sequi, ex voluptatibus voluptates pariatur, exercitationem in!</p>
+        <button>Start</button>
+    </main>
+    <section>
+        <h2>I am Section</h2>
+        <button>Start</button>
+    </section>
+    <div class="circle">
+
+
+    </div>
+    <div class="box1">
+   <h2>I am Box1</h2>
+    </div>
+    <div class="box2">
+   <h2>I am Box2</h2>
+    </div>
+</body>
+</html>

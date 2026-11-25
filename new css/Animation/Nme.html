@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameAnimation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #inner{
+            height: 100vh;
+            background-color: palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #outer{
+            height: 200px;
+            width: 95%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: wheat;
+            border-radius: 20px;
+            gap: 20px;
+            text-shadow: 3px 4px 5px black;
+            
+             }
+             .Wor{
+                animation: Words 2s ease-in infinite alternate;
+             }
+             
+             @keyframes Words {
+                from{
+                    transform: translateY(-70px);
+
+                }
+                to{
+                    transform: translateY(60px);
+
+
+                }
+                
+             }
+             #o{
+                animation-delay: 0.1s;
+             }
+             #w{
+                animation-delay: 0.2s;
+             }
+             #m{
+                animation-delay: 0.3s;
+             }
+            #i{
+                animation-delay: 0.3s;
+             }
+    </style>
+</head>
+<body>
+    <div id="inner">
+        <div id="outer">
+            <h2 class="Wor" id="s">S</h2>
+            <h2 class="Wor" id="o">O</h2>
+            <h2 class="Wor" id="w">W</h2>
+            <h2 class="Wor" id="m">M</h2>
+            <h2 class="Wor" id="i">I</h2>
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>

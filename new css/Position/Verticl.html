@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical
+    </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:palevioletred
+        }
+        nav{
+          background-color: yellowgreen;
+          height: 100vh;
+          width: 10%;
+        }
+       nav ul{
+        list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            display: block;
+            font-size: 20px;
+            letter-spacing: 1.2px;
+            &:hover{
+                background-color: brown;
+            }
+        }
+        #Mobile{
+            position: relative;
+        }
+        #menu{
+            background-color: saddlebrown;
+            position:absolute ;
+            list-style: none;
+            top: 0%;
+            left: 100%; 
+            display: none;  
+          }
+          #Mobile:hover #menu{
+            cursor: pointer;
+            display: block;
+         }
+         #iphone{
+            position: relative;
+         }
+         #imenu{
+            list-style: none;
+            background-color: maroon;
+            position:absolute;
+            top: 0%;
+            left: 100%;
+            display: none;
+            width: 150%;
+            
+}
+         #iphone:hover #imenu{
+                display: block;
+                cursor: pointer;
+            
+         }
+
+
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li id="Mobile"><a href="">Mobile</a>
+                <ul id="menu">
+                    <li id="iphone"><a href="">iphone</a>
+                        <ul id="imenu">
+                            <li><a href="">iphone15</a></li>
+                            <li><a href="">iphone16</a></li>
+                            <li><a href="">iphone17</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Samsung</a></li>
+                    <li><a href="">one plus</a></li>
+                    <li><a href="">Realme</a></li>
+                </ul>
+            </li>
+            <li><a href="">Laptop</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

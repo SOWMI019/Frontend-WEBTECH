@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100vh;
+            background: linear-gradient(red,blueviolet);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        header > .box1{
+            height: 350px;
+            width: 350px;
+            border: 2px solid wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         header > .box2{
+            height: 350px;
+            width: 350px;
+            border: 2px solid wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .box1 > .circle{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+             border-radius: 20px; 
+            
+            
+            background-color: palevioletred;
+            animation: RoateBox 1s ease-in ;
+        }
+        @keyframes RoateBox {
+            from{
+                transform: rotate(0deg);
+                border: 2px solid green;
+
+            }
+            to{
+                transform: rotate(360deg);
+                 border-radius:50%; 
+
+            }
+            
+        }
+        .box2 > .Spinner{
+            height: 100px;
+            width: 100px;
+            
+            
+            border-top: 2px solid green;
+            border-bottom: 2px solid green;
+            /* border-radius: 20px; */
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from{
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform: rotate(360deg);
+               
+
+            }
+            
+        }
+        main{
+            height: 100vh;
+            background: linear-gradient(pink,powderblue);
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+        }
+          
+        
+        main > .BigCircle{
+            height: 300px;
+            width: 300px;
+            border: 2px solid bisque;
+             border-radius:50%; 
+             animation: Orbit 4s ease-in infinite;
+        }
+        .Smallcircle{
+            height: 70px;
+            width: 70px;
+            border: 2px solid beige;
+            border-radius: 50%;
+            
+         }
+         @keyframes Orbit {
+            from{
+                transform: rotate(0deg);
+
+            }
+            to{
+                transform: rotate(360deg);
+
+            }
+        }
+        .right{
+            height: 400px;
+            width: 400px;
+            border: 2px solid blanchedalmond;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+        .right > .dot{
+            height: 50px;
+            width: 50px;
+            border: 4px solid blanchedalmond;
+            border-radius:50%;
+            animation: Up-down 1s ease-in infinite alternate;
+        }
+         #dot1{
+            background-color: brown;
+
+        }
+        #dot2{
+            background-color: purple;
+            animation-delay: 0.1s;
+
+        }
+        #dot3{
+            background-color: darkgreen;
+             animation-delay: 0.2s;
+
+        }
+        #dot4{
+            background-color: darkcyan;
+            animation-delay: 0.3s;
+
+        }
+        #dot5{
+            background-color: sienna;
+            animation-delay: 0.4s;
+
+        }
+        @keyframes Up-down {
+            from{
+                transform: translateY(-70px);
+
+            }
+            top{
+                transform: translateY(70px);
+
+            }
+            
+        }
+        
+        
+        
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box1">
+            <div class="circle"></div>
+        </div>
+        <div class="box2">
+            <div class="Spinner"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="BigCircle">
+        <div class="Smallcircle"></div>
+    </div>
+
+    <div class="right">
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
+    </div>
+    </main>
+    
+</body>
+</html>

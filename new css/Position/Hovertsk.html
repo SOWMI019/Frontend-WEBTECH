@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        } 
+        nav{
+            background-color: plum;
+            height:100vh;
+            width: 20%;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            padding: 1rem;
+            gap: 25px;
+            color: white;
+            letter-spacing: 1.5px;
+            display: block;
+            &:hover{
+                background-color: salmon;
+            }
+
+        }
+        #bf{
+            position: relative;
+        }
+       
+        #option{
+            list-style: none;
+            position: absolute;
+            top:0%;
+            left: 100%;
+             display: none; 
+            &:hover{
+                background-color: violet;
+            }
+        } 
+        #op{
+            position: relative;
+        }
+        #bf:hover #option{
+            display: block;
+        }
+     
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul><li id="Bf"><a href="">BreakFast</a>
+            <ul id="option">
+                <li id="op"><a href="">Veg</a>
+                <ul id="Foodmenu">
+                    <li><a href="">Dosa</a></li>
+                    <li><a href="">Idly</a></li>
+                    <li><a href="">Pongal</a></li>
+                    <li><a href="">Upma</a></li>
+                    </ul></li>
+                <li><a href="">Non-Veg</a></li>
+            </ul>
+        </li>
+        <ul><li><a href="">Lunch</a></li>
+        <ul><li><a href="">Dinner</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

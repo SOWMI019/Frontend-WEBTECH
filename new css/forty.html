@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortyt</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+         main{
+            display: grid;
+            grid-template-columns: 40% 20% 40%;
+            grid-template-rows:repeat(3 ,400px);
+            
+        } 
+         main > section{
+            background-repeat: no-repeat;
+           background-size:  cover;
+
+        } 
+         main > section > article{
+            height: 100%;
+            padding-left: 10%;
+            display: flex;
+            align-items: center;
+            transition: 1s;
+            color: white;
+            
+        
+        &:hover{
+            background-color: transparent;
+            cursor: pointer;
+        }
+        } 
+        p{
+            margin-top:20px ;
+            padding-top: 20px;
+            border-top: 3px solid white;
+        }
+        .sec1{
+            
+            background-image:url(./pic01.jpg);
+        }
+        .sec1 > article{
+            background-color: rgba(0, 255, 255, 0.368);
+        }
+        .sec2{
+            grid-column: 2 span;
+            background-image: url(./pic02.jpg);
+        }
+        .sec2 > article{
+             background-color:rgba(128, 0, 128, 0.386) ;
+
+        }
+        .sec3{
+            
+            grid-column: span 2;
+            background-image: url(./pic03.jpg);
+        }
+        .sec3 > article{
+            background-color: rgba(255, 166, 0, 0.418);
+        }
+        .sec4{
+            
+            background-image: url(./pic04.jpg);
+        }
+        .sec4 > article{
+            background-color: rgba(255, 255, 0, 0.4);
+        }
+        .sec5{
+            
+            background-image:url(./pic05.jpg) ;
+        }
+        .sec5 > article{
+            background-color: rgba(135, 207, 235, 0.323);
+
+        }
+        .sec6{
+            grid-column: span 2;
+           
+            background-image: url(./pic06.jpg);
+        }
+        .sec6 > article{
+             background-color: rgba(144, 238, 144, 0.327);
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <main>
+    <section class="sec1">
+       <article>
+        <div>
+            <h1>Aliquam</h1>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       </article> 
+    </section>
+    
+    <section class="sec2">
+       <article>
+        <div>
+            <h1>Tempus</h1>
+            <p>Lorem ipsum dolor </p>
+        </div>
+       </article> 
+    </section>
+
+    <section class="sec3">
+       <article>
+        <div>
+            <h1>Magna</h1>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       </article> 
+    </section>
+
+    <section class="sec4">
+       <article>
+        <div>
+            <h1>Ipsum</h1>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       </article> 
+    </section>
+
+    <section class="sec5">
+       <article>
+        <div>
+            <h1>Consequet</h1>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       </article> 
+    </section>
+
+    <section class="sec6">
+       <article>
+        <div>
+            <h1>Eitam</h1>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       </article> 
+    </section> </main>
+
+    
+</body>
+</html>

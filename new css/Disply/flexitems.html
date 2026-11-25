@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexItems</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-boxh;
+        }
+          /* section{
+            background-color: purple;
+           flex-direction: column;
+            display: flex;
+        }
+        #one{
+            background-color: yellowgreen;
+            order: 3;
+           
+            color: white;
+            flex-basis: 200px;
+            
+         }
+        #two{
+            background-color: firebrick;
+            order: 1;
+            
+             flex-basis: 400px; 
+            
+        }
+         #three{
+            background-color: darkcyan;
+            order: 2;
+           
+            flex-basis: 200px;
+        }
+          h1{ 
+            background-color: burlywood;
+             flex-basis: 600px; 
+           }     */
+        section{
+            background-color: blue;
+            display: flex;
+            width: 900px;
+            
+        }
+        #one{
+            background-color: yellowgreen;
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+        #two{
+            background-color:palegoldenrod;
+            flex-basis: 200px;
+            flex-grow: 2;
+        }
+        #three{
+            background-color: lavenderblush;
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="one">first</div>
+        <div id="two">second</div>
+        <div id="three">third</div>
+    </section>
+
+    <h1>I am outside the section</h1>
+</body>
+</html>
