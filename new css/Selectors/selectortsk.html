@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Selector Task</title>
+    <style>
+        caption{
+            color: red;
+        }
+        #nav{
+            color: white;
+            background-color: red;
+        }
+        #lst{
+            color: black;
+            background-color: yellow;
+            text-align: center;
+        }
+        .veg{
+            background-color: lightgreen;
+        }
+        .nveg{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1" height="400px" width="800px">
+        <caption>ABC restarant</caption>
+        <tr id="nav">
+            <th colspan="4">Today's Menu</th>
+        </tr>
+        <tr id="nav">
+            <th>Category</th>
+            <th>Dish</th>
+            <th>Type</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Starters</td>
+            <td>Veg Spring Roll</td>
+            <td class="veg">Veg</td>
+            <td>₹120</td>
+        </tr>
+        <tr>
+            <td>panner tikka</td>
+            <td class="veg">Veg</td>
+            <td>₹180</td>
+        </tr>
+        <tr>
+            <td>Chicken Wings</td>
+            <td class="nveg">Non-veg</td>
+            <td>₹220</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Main course</td>
+            <td>Veg Biryani</td>
+            <td class="veg">Veg</td>
+            <td>₹200</td>
+        </tr>
+       <tr>
+        <td>panner Butter Masala</td>
+        <td class="veg">Veg</td>
+        <td>₹220</td>
+       </tr>
+       <tr>
+        <td>Chicken Biryani</td>
+        <td class="nveg">Non-Veg</td>
+        <td>₹200</td>
+       </tr>
+       <tr id="lst">
+        <td colspan="3"> Chef's Special</td>
+        <td>₹350</td>
+       </tr>
+
+    </table>
+</body>
+</html>

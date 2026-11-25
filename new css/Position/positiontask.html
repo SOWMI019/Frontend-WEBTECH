@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #inner{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: skyblue;
+        }
+            #outer{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background-color: white;
+            border: none;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            
+            gap: 25px;
+            position: relative;
+             
+           
+         
+        }
+           #outer > img{
+           height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: -75px;
+         }
+       
+
+           #outer > h2{
+            font-size: 30px;
+            }
+        #outer > button{
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+          
+
+        }
+        circle{
+            background-color: purple;
+        }
+
+        
+
+       
+    </style>
+</head>
+<body>
+    <div id="inner">
+        <div id="outer">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/050/349/228/small/close-up-of-a-young-man-with-striking-blue-eyes-and-sharp-features-photo.jpeg" alt="">
+       
+        <h2> Alex Morgan</h2>
+        <p>UI/UX Designer & Creative Developer</p>
+        <button>View Profile</button>
+        </div>
+    </div>
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            background-color: palevioletred;
+            height: 100px;
+        }
+        nav h1{
+            color: darkred;
+        }
+        nav li{
+            color: white;
+           list-style: none;
+           font-weight: bold;
+           text-transform: uppercase;
+           letter-spacing: 0.5px;
+          
+         
+        }
+        main > h1{
+            text-align: center;
+            text-transform: capitalize;
+        }
+       main > ol > li{
+        font-size: 23px;
+
+        }
+        section > ul > #list4{
+            background-color: khaki;
+        }
+         section > ul > #list4+li{
+            background-color: paleturquoise
+        }
+        section #list6{
+            color: yellow;
+        }
+        section #list6~li{
+            background-color: lawngreen;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 id="logo">My Logo</h1>
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1>Welcome to Combinator Selector</h1>
+        <p>Combinator Selector is combination of two or more than  simple selector</p>
+        <h3>Types Of Combinator Selector</h3>
+        <ol>
+            <li>Descendent Selector</li>
+            <li>Direct Child Selector</li>
+            <li>Adjacent Sibiling Selector</li>
+            <li>General Sibiling Selector</li>
+        </ol>
+    </main>
+    <section>
+        <ul>
+           <li>item 1</li>
+           <li>item 2</li>
+           <li>item 3</li>
+           <li id="list4">item 4</li>
+           <li>item 5</li>
+           <li id="list6">item 6</li>
+           <li>item 7</li>
+           <li>item 8</li>
+           <li>item 9</li>
+           <li>item 10</li>
+        </ul>
+    
+</body>
+</html>

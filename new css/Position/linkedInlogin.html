@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: palevioletred;
+             display: flex; 
+            justify-content: center;
+            align-items: center; 
+        }
+        main{
+            height: 600px;
+            width: 500px;
+           
+           }
+           #div1{
+            position: relative;
+           }
+           .fa-apple{
+            position: absolute;
+            top:65%;
+            left: 5%;
+
+           }
+           .fa-square-linkedin{
+            color: blue;
+            position: absolute;
+            top:2.5%;
+            left: 14%;
+           }
+           
+        #h2{
+            color: blue;
+        }
+        #Sign{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #p1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+        span{
+            color: blue;
+        }
+        #Apple{
+            border: 1px solid black;
+            border-radius: 15px;
+            width: 50%;
+            padding: 1rem 3rem ;
+            margin-bottom: 20px;
+        }
+        #p2{
+            margin-bottom: 10px;
+        }
+        input{
+            border: 2px solid black;
+            width: 100%;
+            padding: 1rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        
+            
+        }
+        #div2{
+            position: relative;
+        }
+        .fa-eye{
+            position: absolute;
+            top:70%;
+            left: 95%;
+        }
+           
+
+        div > button{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 1rem 1rem;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+       
+        
+
+    </style>
+</head>
+<body>
+    <section>
+    <main>
+        <div id="div1">
+        <h2 id="h2">Linked</h2>
+       <i class="fa-brands fa-square-linkedin"></i>
+        <h2 id="Sign">Sign in</h2>
+        <p id="p1">New to LinkedIn? <span>Join now</span></p>
+        <input type="text" placeholder="Sign in with Apple" id="Apple">
+        <i class="fa-brands fa-apple"></i>
+        <p id="p2">By continuning,you agree to LinkedIn's <span>User Agreement privacy policy</span>, and <span>Cookie Policy</span></p>
+        <hr>
+        </div>
+        <div id="div2">
+            <form action=""></form>
+            <label for="">Email or Phone</label><br>
+            <input type="text" name="" id=""><br>
+            <label for="">Password</label><br>
+            <input type="text" name="" id="">
+            <i class="fa-solid fa-eye"></i>
+
+            <p><span>Forget Password?</span></p>
+             </div>
+            <div>
+                <button>Sign in</button>
+            </div>
+       
+    </main>
+    </section>
+</body>
+</html>

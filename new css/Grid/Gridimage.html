@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #outer{
+            height: 100vh;
+            background-color: plum;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+
+        }
+        #inner{
+            height: 90%;
+            width: 80%;
+            background-color: powderblue;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            color: white;
+        }
+        .box{
+             border: 2px solid black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+           
+         
+            background-repeat: no-repeat;
+            background-position: top;
+            transition: all 1s ease-in;
+
+        }
+        #box1{
+            grid-row: span 2;
+           
+        }
+        #box4{
+            grid-column: span 2;
+        }
+        
+
+         
+         
+
+           
+
+           
+       
+        
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+            <h2>GRID TASK</h2>
+        
+          <div id="inner">
+           <div class="box" id="box1">MOUNTAIN</div>
+           <div class="box" id="box2">SEA</div>
+           <div class="box" id="box3">GARDEN</div>
+           <div class="box" id="box4">SUNRISE</div>
+           <div class="box" id="box5">OCEAN</div>
+           <div class="box" id="box6">SUMMER</div>
+           <div class="box" id="box7">SPRING</div>
+           </div>
+
+
+            
+            
+           
+            
+           
+ </div>
+    
+    
+</body>
+</html>

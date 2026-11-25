@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormLogin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-color: violet;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: saddlebrown;
+            flex-basis: 25%;
+            border-radius: 10px;
+            padding: 1rem;
+            
+        }
+        form > div > input{
+           width: 100%;
+           margin-top: 0.5rem;
+           margin-bottom: 1rem;
+           border: 2px solid gray;
+           border-radius: 5px;
+           padding: 1rem 2rem;
+        }
+        form > div > button{
+            background-color: darkgoldenrod;
+            width: 100%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: 10px;
+           border-radius: 10px;
+           padding: 1rem 2rem;
+           border: 2px solid gray;
+           box-shadow: 0 5px 5px grey;
+           
+           margin-top: 0.1rem;
+           margin-bottom: 1rem;
+        }
+        .Email{
+            position: relative;
+
+        }
+        
+       .fa-envelope{
+        position: absolute;
+        top:50%;
+        left: 2%;
+
+        }
+        .Password{
+            position: relative;
+        }
+        .fa-lock{
+            position: absolute;
+            top: 48%;
+            left: 2%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <i class="fa-brands fa-apple"></i>
+    <i class="fa-solid fa-plane"></i>
+    <i class="fa-solid fa-tree"></i>
+    <i class="fa-solid fa-users"></i> -->
+    <main>
+        <section>
+            <form action="">
+                <div class="Email">
+                    <label for="">Email Address</label>
+                    <input type="text" placeholder="e.g. tchalla@wakanda.gov"><br>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                
+                <div class="Password">
+                    <label for="">Password</label>
+                    <input type="text">
+                 <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div>
+                    <button>Sign in</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

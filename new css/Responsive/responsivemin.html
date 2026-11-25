@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100vh;
+            background-color: peru;
+        }
+        @media (min-width:600px) and (max-width:800px) {
+            header{
+                background-color: aqua;
+            }
+            
+        }
+        #inner{
+            height: 100vh;
+        }
+        #outer{
+            height: 85%;
+            width: 90%;
+            border: 2px solid black;
+           
+           
+            
+
+        }
+        nav {
+            display: flex;
+             justify-content: space-between;
+        }
+
+        #sck{
+           display: flex;
+            gap: 25px;
+        }
+        #sck > li{
+            list-style: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+
+        }
+        #but  button{
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            border-radius:10px;
+        }
+        main{
+            height: 500px;
+            background-color: aqua;
+            display: flex;
+
+        }
+        
+        #left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex-basis: 50%;
+            background-color: yellow;
+            
+             }
+            
+
+        
+       
+        
+
+         
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="inner">
+
+        <div id="outer">
+            <nav>
+             <h2>Knapsack</h2>
+            <ul id="sck">
+                <li>Home</li>
+                <li>About</li>
+                <li>contact</li>
+                <li>Service</li>
+            </ul>
+            <div id="but">
+                  <button>Meet with Developer</button>
+            </div>
+            </nav>
+
+            <main>
+                <aside class="left">
+                <h1>get a website that make you <span>Proud</span></h1>
+                <p>EXperience our live desing process and gets a professional Squarespace website in as little as one day</p>
+          
+            
+             <button>Meet with A Designer</button>
+         </aside>
+
+            <aside class="right">
+                <div class="circle"></div>
+
+                <img src="" alt="">
+                </aside>
+            
+            </main>
+            
+            
+              
+        </div>
+        
+    </div>
+    
+</body>
+</html>

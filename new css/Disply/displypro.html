@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section{
+            height: 5000px;
+            width: 700px;
+            border: 4px solid blueviolet;
+            margin: 50px auto;
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            font-size:40px ;
+        }
+        section > .box{
+            border: 2px solid black;
+            height: 80px;
+            width: 80px;
+            padding: 10px;
+
+        }
+        section > #box1{
+            display: inline-block;
+        }
+         section > #box2{
+            display: inline-block;
+        }
+         section > #box3{
+            display: inline;
+        }
+        section > button{
+            display: block;
+        }
+        section > #box4{
+            display: none;
+        }
+        /* interview-----> visibility hidden the box is hidden but place is not taken but we give none the box is hidden the place is taken */
+        .card{
+            width: 350px;
+            border: 2px solid red;
+            margin: 50px auto;
+            padding: 20px 30px;
+            background-color: goldenrod;
+            border-radius: 10px;
+            box-shadow:  2px 4px 8px gray;
+        }
+         .card button{
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 19px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border:none;
+            border-radius: 10px;
+            text-shadow: 2px 4px 6px solid;
+            
+         }
+         .card button:hover{
+          background-color: brown;
+         }
+
+    </style>
+        
+</head>
+<body>
+    <h2>Display property</h2>
+    <section>
+        <div class="box" id="box1">box 1</div>
+        <div class="box" id="box2">box 2</div>
+        <div class="box" id="box3">box 3</div>
+        <div class="box" id="box4">box 4</div>
+        <div class="box" id="box5">box 5</div>
+        <button>Submit</button>
+        <button>Reset</button>
+    </section>
+    <div class="card">
+        <button>SQL</button>
+        <button>Java</button>
+        <button>HTML</button>
+        <button>CSSs</button>
+    </div>
+
+</body>
+</html>

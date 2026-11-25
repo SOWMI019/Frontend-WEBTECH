@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selector</title>
+    <style>
+        /* Tag Name */
+        nav{
+            background-color: blue;
+            height: 120px;
+            
+           }
+    header{ 
+        background-color: salmon;
+        height: 250px;
+    } 
+    /* Id selector */
+    #Logo{
+        color: red;
+    }
+    li{
+        color: purple;
+        list-style: none;
+    }
+    /* class selector*/
+    .product{
+        height: 200px;
+        width:300px ;
+        background-color:lightblue ;
+
+    }
+     /* Universal selector */
+     *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+     }
+     /* Group Selector */
+     .product , header{
+        text-align: center;
+     }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 id="Logo">My Logo</h1>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+   <header>
+    <h1>Welcome to Css selector</h1>
+   </header> 
+   <main>
+    <div class="product">
+        <h2>Laptop</h2>
+        <h3>75000</h3>
+    </div>
+    <div class="product">
+        <h2>Mobile</h2>
+        <h3>65000</h3>
+    </div>
+    <div class="product">
+        <h2>Watch</h2>
+        <h3>1000</h3>
+    </div>
+  
+   </main>
+</body>
+</html>

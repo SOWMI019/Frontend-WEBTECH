@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            background-color: gold;
+            display: grid;
+            grid-template-columns: 100px 300px 200px ;
+            grid-template-rows: repeat(3,50px);
+            justify-content: center;
+            align-content: center; 
+            text-align: center;
+            place-content: center;
+            height: 100vh;
+            
+        }
+        header{
+            background-color:  darkcyan;
+            grid-column: span 3;
+            color: white;
+            
+        }
+        aside{
+            background-color: salmon;
+            grid-row: span 2;
+            color: white;
+        }
+        section{
+            background-color: violet;
+            color: white;
+        }
+        div{
+            background-color: maroon;
+            color: white;
+        }
+        footer{
+            background-color:olivedrab;
+            grid-column: span 2;
+            color: white;
+        }
+        header,aside,section,div,footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>Header</header>
+        <aside>Menu</aside>
+        <section>Main</section>
+        <div>Right</div>
+        <footer>Footer</footer>
+        
+    </main>
+    
+</body>
+</html>

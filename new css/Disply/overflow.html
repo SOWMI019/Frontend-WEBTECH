@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       .outer{
+        height: 100vh;
+       background: linear-gradient(red,orange,purple);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+        .outer > .inner{
+            height: 350px;
+            width: 300px;
+            background: linear-gradient(white,pink);
+            border-radius: 15px;
+            padding: 10px 20px;
+            /* overflow: scroll; // interview qn even though there is one line it will provide the scroll bar both sides */
+            /* overflow: auto; it can understand whether it overflow or not */
+            overflow: auto;
+            
+        }
+       
+        .inner > h1{
+            text-align: center;
+            letter-spacing: 1.5px;
+
+        }
+        .inner > p{
+            text-align: justify;
+
+        }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>OverFlow</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga earum hic assumenda ut minima dicta dolorum quas accusantium vero ipsam illo, molestias libero. Nesciunt qui dolores autem necessitatibus repellendus quos voluptas molestiae eius officia animi quisquam sint expedita rerum illo iusto iste, aperiam molestias praesentium ab voluptate sed aspernatur deleniti assumenda. Dignissimos consectetur neque obcaecati aut consequuntur iure voluptatibus quas aliquam veniam numquam iste ipsam ipsum dolore ab laboriosam optio alias, quaerat tenetur? Non labore eveniet quidem unde ullam natus laboriosam repellendus, atque distinctio eius amet cumque sequi iure iusto asperiores enim hic, culpa fuga. Itaque voluptate quia voluptas commodi tempore, aliquam officiis perspiciatis velit consequuntur, deleniti minus aliquid minima doloremque odit iure ipsam nulla. Vitae, modi provident et illum, ratione asperiores corrupti totam aspernatur delectus illo voluptate earum reiciendis quod porro atque neque recusandae? Minima voluptatem consectetur tenetur facilis rerum! Dignissimos quibusdam consectetur libero reprehenderit, autem molestiae illo in minus similique nulla beatae. Ullam reprehenderit temporibus repellendus sed dolorem vel maxime voluptatum exercitationem similique iusto quis impedit distinctio blanditiis, quisquam hic eum, delectus atque, iure minus esse fugit nesciunt magnam commodi quasi. Repudiandae corrupti voluptas, fugit sapiente magni quam nobis quia voluptatibus. Nulla deleniti, non cumque, repudiandae ab a magni distinctio iure ut animi laborum obcaecati. Voluptatem at delectus optio quidem culpa vero ducimus accusamus dolores repellat exercitationem ut alias excepturi nisi necessitatibus repellendus obcaecati eius repudiandae laborum, quos ipsa. Rem, quae voluptas rerum, dolores repellat maiores ratione ab ad aspernatur nesciunt atque nam sint voluptatibus fugit! Vero, numquam amet? Consectetur, autem alias in animi itaque illo fugit aliquid. Optio et dolor eligendi, dicta quo eos fuga commodi ea dolorem neque! Impedit repudiandae minima eaque, voluptatibus ipsam aperiam quisquam nisi. Assumenda enim ducimus error. Delectus, rerum nobis! Repellat nihil dolore quidem sequi saepe similique alias recusandae odit ipsum quas?
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

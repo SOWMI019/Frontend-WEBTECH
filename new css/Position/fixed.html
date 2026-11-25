@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed and Sticky </title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 100px;
+            color: white;
+            background-color: chocolate;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+
+            z-index: 1;
+        }
+        header{
+            height: 300px;
+            background-color: powderblue;
+            text-align: center;
+            padding: 20px;
+           padding-top: 100px;
+
+        }
+        main{
+            height: 300px;
+            background-color: darkcyan;
+            text-align: center;
+            padding: 20px;
+
+        }
+        main > button{
+            padding: 20px 40px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold; 
+
+            position: sticky;
+            top: 150px;
+           
+
+        }
+
+        
+        section{
+            height: 300px;
+            background-color: navy;
+            text-align: center;
+            padding: 20px;
+
+        }
+        article{
+            height: 300px;
+            background-color: saddlebrown;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        aside{
+            height: 300px;
+            background-color: maroon;
+            text-align: center;
+            padding: 20px;
+
+        }
+        .hero{
+            height: 300px;
+            background-color: lawngreen;
+            text-align: center;
+            padding: 20px;
+
+        }
+        footer{
+            height: 300px;
+            background-color: blueviolet;
+            text-align: center;
+            padding: 20px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>navBar</h1>
+        </nav>
+
+    <header>
+            <h1>Welcome to CSS Position</h1>
+        </header>
+
+        <main>
+            <h1>I am Main tag</h1>
+            <button>Sticky/Click me</button>
+        </main>
+
+        <section>
+            <h1> I am section tag</h1>
+        </section>
+        <article>
+            <h1> I am article tag</h1>
+        </article>
+    <aside>
+        <h1> I am aside tag</h1>
+    </aside>
+    <div class="hero">
+        <h1>I am div tag </h1>
+    </div>
+    <footer>
+        <h1>I am footer tag</h1>
+    </footer>
+</body>
+</html>

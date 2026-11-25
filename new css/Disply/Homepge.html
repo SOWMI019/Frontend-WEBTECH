@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 100px;
+            background-color: palevioletred;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        ul{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        ul > li{
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                background-color: purple;
+            }
+        }
+        main{
+            height: 200px;
+            background-color: yellowgreen;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            gap: 10px;
+            
+          
+
+
+        }
+        main > h1{
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+            font-size: 40px;
+
+        }
+        main > p{
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 1.6px; 
+        }
+        main > button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: rgb(146, 70, 140);
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+        section{
+            display: flex;
+            height: calc(100vh - 300px);
+            justify-content: space-around;
+            align-items: center;
+        }
+        section > article{
+            height: 180px;
+            width: 360px;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to flex Session</h1>
+        <p>Flex is one display property used to arrange the element in one direction </p>
+       <button>get Started</button>
+    </main>
+    <section>
+        <article>
+            <h2>HTML</h2>
+            <p>Used to create the Structure of Webpage.</p>
+        </article>
+        <article>
+            <h2>CSS</h2>
+            <p>Used to Style our Webpage.</p>
+        </article>
+        <article>
+            <h2>JS</h2>
+            <p>Used to add functionalities our Webpage </p>
+        </article>
+    </section>
+</body>
+</html>
