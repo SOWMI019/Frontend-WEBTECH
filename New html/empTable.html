@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Creating Emp Table</h1>
+    <table border="10" height="300" width="500" cellspacing="5" cellpadding="10">
+        <caption>Emp Table</caption>
+    
+        <tr>
+            <th>eid</th>
+            <th>ename</th>
+            <th>sal</th>
+            <th>Job</th>
+        </tr>
+        <tr>
+        <td>1</td>
+        <td>Miller</td>
+        <td>6000</td>
+        <td>Manager</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Allen</td>
+            <td>7734</td>
+            <td>Analyst</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Scott</td>
+            <td>9000</td>
+            <td>clerk</td>
+        </tr>
+
+    </table>
+    //combination of both rows and column is called cell<br>
+    //diff btw cellpadding and cellpadding
+
+    <table border="5" width="800" cellspacing="10" cellpadding="10">
+        <caption>cartoon Table</caption>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Known for</th>
+        </tr>
+        <tr>
+            <td> <img src="https://i.pinimg.com/originals/17/44/07/1744076b990ae06f2e504961bed94c43.gif"  width="300"></td>
+           <td>Tom</td>
+           <td><ul>
+            <li>Chasing Jerry</li>
+            <li>Loves Milk</li>
+            <li>Gets Tricked by Jerry</li>
+           </ul></td>
+        </tr>
+        <tr>
+            <td><img src="https://media2.giphy.com/media/8VbpkTaUHYm4CJ4WGm/200.gif" width="300"  alt=""></td>
+            <td>Jerry</td>
+            <td><ul type="Circle">
+                <li>Loves Cheese</li>
+                <li>Tricks Tom</li>
+                <li>Small and Smart</li>
+            </ul></td>
+            <tr>
+                <td><img src="https://i.pinimg.com/originals/f5/76/66/f57666d77a0ac9b7352b3ce809af2eda.gif" alt=""></td>
+                <td>Doreamon</td>
+                <td><ol>
+                    <li>Gadget Pocket</li>
+                    <li>Helps Nabiya</li>
+                    <li>Loves dorayaki</li>
+                </ol></td>
+            </tr>
+
+        </tr>
+    </table>
+
+
+    <table border="1"  width="800" height="300">
+        <caption> Table with rowspan and colspan</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+
+       <tr>
+        <td colspan="2">4</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td rowspan="2">6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+       </tr>
+       <tr>
+        <td>9</td>
+     </tr>
+     <tr>
+        <td colspan="2">10</td>
+     </tr>
+    </table>
+
+    <table border="10" height="200" width="800">
+        <caption><b>College TimeTable</b></caption>
+        <tr>
+            <th>Day/Period</th>
+            <th>9:30-10:30</th>
+            <th>10:30-11:30</th>
+            <th>11:30-12:30</th>
+            <th>12:30-1:30</th>
+            <th>1:30-2:30</th>
+            <th>2:30-3:30</th>
+           <th>3:30-4:30</th>
+            <th>4:30-5:30</th>
+            </tr>
+            <tr>
+                <th>Monday</th>
+                <td>Eng</td>
+                <td>Math</td>
+                <td>Che</td>
+                <td rowspan="5">Lunch</td>
+                <td colspan="3">Lab</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">Lab</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Math</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Math</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">Library</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">Lab</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">Lab</td>
+                <td>Math</td>
+            </tr>
+         </table>
+
+         
+         
+         
+           
+            <table border="10" width="800">
+                 <h1> Chocolate Chip Cookies</h1>
+                 <p><b>Prepare Time:</b>15 Minutes</p>
+                 <p><b>Cook Time:</b> 10 Minutes</p>
+            <tr>
+                <td rowspan="2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGAlvNFw1tAWlucyIEC5TDb6k1gPLKkeuqnw&s" height="300" alt=" chocochips"></td>
+                <td>
+                    <h4>Steps</h4>
+                    <ol>
+                    <li>Preheat the oven to 350&degF</li>
+                    <li>Mix flour and sugar in a bowl</li>
+                    <li>Add chocolate chips and stir well</li>
+                    <li>Bake for 10Minutes or untill golden brown</li>
+                </ol></td>
+            </tr>
+            <tr>
+                <td><h4>Ingredients</h4>
+                
+                    <table border="1">
+                    <tr>
+                        <th>Ingredients</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Flour</td>
+                        <td>2 cups</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate chips</td>
+                        <td>1 cup</td>
+                    </tr>
+                    <tr>
+                        <td>Sugr</td>
+                        <td>2 Cups</td>
+                    </tr>
+                    </table>
+                </td>
+                
+            </tr>
+         </table>
+         <p><b><i>Please Visit our Website and order your Food</i></b>🎂</p>
+
+
+         <marquee behavior="" direction="">
+           <h2> Exploring Trvel Destintions"</h2>
+         </marquee>
+
+         <table border="1" width="1200">
+            <tr>
+                <th rowspan="2">Destinations</th>
+                <th colspan="2">Details</th>
+                
+                <th rowspan="2">Map</th>
+            </tr>
+            <tr>
+                <th>Images</th>
+                <th>places</th>
+
+            </tr>
+            <td>Paris <i>(france)</i>
+            </td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Fh3r7K8lz0jQauQMBgsgjvfVHKsIGcTrC92vlYpXzw&s=10" height="300" width="300" alt=""></td>
+            <td>
+                <ol>
+                    <li>Eiffel Tower</li>
+                    <li>Louew Museum</li>
+                    <li>La Revue negre</li>
+                </ol>
+            </td>
+            <td rowspan="3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991626110954!2d2.2919063763056844!3d48.85837007133203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sin!4v1790759990298!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></td>
+                
+            </tr>
+            <tr>
+                <td>Tokyo <i>(Japan)</i></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ887DhaDJ8YiTvbmUzINN2-Qa8NIw5B6a9E1uhgUfWfg&s=10" height="300" width="300" alt=""></td>
+                <td><ul type="disc">
+                    <li>Todai Temple</li>
+                    <li>Kofuku Temple</li>
+                    <li>Gango Temple</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>New York <i>(USA)</i></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoB4pRG4F4crx4PXqHis15NbF5wueomfMFIGnuK_n1oA&s=10" height="300" width="300" alt=""></td>
+                <td>
+                    <ul type="Circle">
+                        <li>Statue of liberty</li>
+                        <li>summit one vanderbilt</li>
+                        <li>Empire state Building</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="4"> Thank you Everyone</th>
+            </tr>
+            
+
+         </table>
+                                                                
+
+
+
+</body>
+</html>

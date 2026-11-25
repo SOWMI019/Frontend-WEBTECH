@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div tag in html</title>
+    <style>
+        #nav{
+            background-color: aqua;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        #main{
+            background-color: brown;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        #Section{
+            background-color: purple;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            }
+            .crd{
+                height: 220px;
+                width: 300px;
+                background-color: antiquewhite;
+                border-radius: 15px;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 2px 4px 8px gray; 
+
+
+            }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>MyLogo</h1>
+        <ul type="none">
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Welcome to my Website </h1>
+        <p>Here you will Learn about html,css,javaScript,react.</p>
+        <button>Get Started</button>
+</div>
+           <div id="Section">
+            <div class="crd">
+                <h2>I am crd </h2>
+            </div>
+            <div class="crd">
+                <h2>I am crd</h2>
+            </div>
+            <div class="crd">
+               <h2>I am crd</h2>
+            </div>
+    
+</div>
+</body>
+</html>
