@@ -1,0 +1,89 @@
+nav{
+    background-color: crimson;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > h2:hover{
+    color: antiquewhite;
+}
+nav >button:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+nav > button:active{
+    background-color: purple;
+}
+main > ul > li:nth-child(4){
+    background-color: pink;
+}
+main > ul > li:nth-child(2n){
+    background-color: pink;
+}
+main > ul > li:nth-child(2n+1){
+    background-color: aqua;
+}
+main > ul >li:hover{
+    background-color: gray;
+}
+main > input:focus{
+    background-color: green;
+}
+section > h1:nth-of-type(2){
+    color: blueviolet;
+}
+section > h3:nth-of-type(7){
+    color: yellow;
+}
+section > h1:first-child{
+    color:aliceblue
+}
+article > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px red;
+    
+}
+article > p{
+    font-size: 21px;
+    word-spacing: 4px;
+    text-align: justify;
+    text-indent: 100px;
+    line-height: 30px2;
+    
+}
+article > p::first-letter{
+    font-size: 50px;
+    color: brown;
+}
+article > p::first-line{
+    font-style: italic;
+}
+article > p::selection{
+    background-color: green;
+    color: whitesmoke;
+}
+article > h1::after{
+    content: "***";
+    color: black;
+}
+article > h1::before{
+    content: "***";
+    
+}
+article > input::placeholder{
+    color: purple;
+    text-align: center;
+    font-style: italic;
+}
+article > ul > li::marker{
+    color:blue
+}
+article > ul > li:nth-child(2n)::marker{
+    color: blueviolet;
+}
+footer > a[target ="_blank"]{
+    background-color: black;
+}
