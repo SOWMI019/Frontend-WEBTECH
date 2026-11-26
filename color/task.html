@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav{
+            height: 88px;
+            background-color: #f8f9ff;
+            color: #17172b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 7%;
+
+        }
+        nav > h2{
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        nav > ul{
+            display: flexbox;
+            gap: 30px;
+            list-style: none;
+            text-transform: capitalize;
+        }
+        nav > button{
+            padding: 10px 15px ;
+            text-transform: capitalize;
+            font-weight: bold;
+            background-color:  #6c5ce7; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+        }
+        nav > button:hover{
+            transform: translateY(-2px);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+        }
+        main{
+            height: calc(100vh - 88px);
+           background: linear-gradient(to right top,rgb(232,225,255) ,rgb(245,243,255));
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <main>
+            <h2>NOVA</h2>
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>about</li>
+                <li>Contact</li>
+            </ul>
+            <button>GET STARTED</button>
+        </main>
+    </nav>
+    
+</body>
+</html>
