@@ -1,0 +1,56 @@
+nav{
+    background-color: blueviolet;
+    height: 80px;
+}
+nav h1{
+    color:red;
+}
+main{
+    height: 400px;
+    background-color:aqua;
+}
+main section{
+    background-color: yellowgreen;
+    height: 280px;
+}
+main > h1{
+    text-align: center;
+}
+main section article{
+    background-color: brown;
+    height: 100px;
+}
+.outer > ol >#item4{
+    background-color: pink;
+}
+.outer > ol > #item4+li{
+    background-color: red;
+}
+.outer > ol > #items7{
+    background-color: yellow;
+}
+.outer > ol > #item7~li{
+    background-color: gray;
+}
+.Hero > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 3px 4px 2px blue;
+}
+.Hero > p {
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 5px;
+    text-indent: 100px;
+    line-height: 20px;
+}
+.Hero > p > span{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration: wavy;
+
+}
+

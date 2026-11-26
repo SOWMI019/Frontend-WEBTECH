@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NameAnimation</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 100vh; 
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            background-color: pink;
+        }
+        .outer > .inner{
+
+            height: 400px;
+            width: 70%;
+            background-color: white;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 30px;
+            font-weight: bolder;
+            font-size: 30px;
+
+        }
+        p{
+
+            animation: Names 2s linear infinite alternate;
+        }
+        #p1{
+            color: white;
+        }
+        #p2{
+            color: saddlebrown;
+            animation-delay: 0.1s;
+            
+        }
+         #p3{
+            color: red;
+            animation-delay: 0.2s;
+           
+        }
+         #p4{
+            color: yellowgreen;
+             animation-delay: 0.3s;
+            
+            }
+        #p5{
+            color: goldenrod;
+             animation-delay: 0.4s;
+             
+        }
+        #p6{
+            color: black;
+             animation-delay: 0.5s;
+            
+        }
+        #p7{
+            color: palevioletred;
+             animation-delay: 0.6s;
+             
+        }
+        @keyframes Names {
+            from{
+                transform: translateY(-80px);
+
+            }
+            to{
+                transform: translateY(80px);
+                text-shadow: 1px 2px 3px black;
+                
+
+            }
+            
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+
+        <div class="inner">
+
+            <p id="p1">S</p>
+            <p id="p2">O</p>
+            <p id="p3">W</p>
+            <p id="p4">M</p>
+            <p id="p5">I</p>
+            <p id="p6">Y</p>
+            <p id="p7">A</p>
+        </div>
+    </div>
+    
+</body>
+</html>
