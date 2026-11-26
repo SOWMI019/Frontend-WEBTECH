@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    background-color: salmon;
+}
+.outer > section{
+    height: 500px;
+    width: 400px;
+    background-color: purple;
+
+}
+section > article{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+.box1{
+    border: 5px solid pink;
+    padding: 20px;
+}
+.box2{
+    border: 5px solid cadetblue;
+    padding: 20px;
+}
+.box3{
+    border: 5px solid salmon;
+    padding: 20px;
+}
+.box3 {
+    font-size: 2em;
+}
+
+
