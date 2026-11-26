@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main{
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        .top{
+            height: 33%;
+            width: 100%;
+           /* border: 3px solid yellow;*/
+            background-color: orange;
+        }
+        .middle{
+            height: 33%;
+            width: 100%;
+           /* border: 3px solid yellow;*/
+            background-color: white;
+        }
+        .bottom{
+            height: 34%;
+            width: 100%;
+           /* border: 3px solid yellow;*/
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height: 90px;
+            animation: spinning 1s linear infinite ;
+        }
+        @keyframes spinning {
+        from{
+          transform:rotate(0deg);
+
+        }
+        to{
+       transform:rotate(360deg);
+        }
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <div class="top"></div>
+        <div class="middle">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </main>
+    
+</body>
+</html>
