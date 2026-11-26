@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items:"centre";
+}
+.outer > .inner{
+    
+   
+     justify-content:space-evenly;
+}
+.inner > .box{
+    height: 60px;
+    width:60px ;
+    border: 2px solid blue;
+    ji
+   
+
+}
