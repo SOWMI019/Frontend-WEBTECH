@@ -1,0 +1,79 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    nav{
+    background-color: yellowgreen;
+    color: antiquewhite;
+    height: 80px;
+}
+main{
+    height: 500px;
+    background-color: pink;
+}
+main  > .card1{
+    height: 200px;
+    width: 300px;
+    background-color: purple;
+    padding: 10px 20px 15px 30px;
+    /*padding-top:10px;
+    padding-right=20px;
+    padding-bottom=15px;
+    padding-left=30px;*/
+    border: 10px solid black;
+
+}
+main  > .card2{
+    height: 250px;
+    width: 400px;
+    background-color: salmon;
+    border: 5px solid yellow;
+    padding-top:10px;
+    padding-right:20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+nav > button{
+    padding: 5px;
+    margin-top: 3px;
+}
+section > .card3{
+    height: 200px;
+    width: 300px;
+   background-color: brown;
+   border: 10px solid yellowgreen;
+
+}
+section > .card4{
+    height: 200px;
+    width: 300px;
+    background-color: darkblue;
+   
+}
+.box1{
+    background-color: yellow;
+    height: 200px;
+    width:250px ;
+    margin: 10px auto ;
+   /* border-width: 10px ;
+    border-style: solid ;
+    border-color: sandybrown;*/
+    border: 5px solid sienna;
+    border-radius: 50px;
+}
+.box2{
+    height: 100px;
+    width: 400px;
+    background-color: cadetblue;
+    margin: 10px auto;
+    border-top: 5px solid gold;
+    border-bottom: 10px dashed seashell;
+    border-right: 5px dotted rebeccapurple;
+    border-left: 10px double burlywood;
+    border-radius: 20px;
+    /*border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;*/
+
+}
